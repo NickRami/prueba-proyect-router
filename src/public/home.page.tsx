@@ -1,15 +1,14 @@
-import CategoryCards from "../components/category.cards"
-import Footer from "../components/footer"
-import Navbar from "../components/navbar"
+import HeaderContent from "@/components/header"
+// import CategoryCards from "../components/category.cards"
+
 
 const Home = () => {
   return (
-    <div className="d-flex flex-column min-vh-100">
-        <Navbar/>
-        <main className="flex-grow-1"> 
-            <CategoryCards/>    
+    <div className=" min-h-screen flex flex-col">
+        <main className=""> 
+            {/* <CategoryCards/>     */}
+            <HeaderContent/>
          </main>
-        <Footer/>
     </div>
   )
 }
