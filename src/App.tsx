@@ -9,6 +9,7 @@ import PrivateLayout from "./layouts/private.layout"
 import Home from "./pages/public/home.page"
 import NotFound from "./pages/public/not-found"
 import Login from "./pages/auth/login-page"
+import Register from "./pages/auth/register-page"
 
 
 const App = () => {
@@ -24,7 +25,7 @@ const App = () => {
       <Route path="auth" >
 
         <Route path = 'login' element={<Login/>} />
-
+          <Route path = 'register' element={<Register/>} />
       </Route>
    
 

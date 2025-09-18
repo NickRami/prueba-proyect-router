@@ -9,6 +9,7 @@ import {
   CardFooter,
 } from "@/components/ui/card";
 import { FcGoogle } from "react-icons/fc";
+import { Link} from "react-router-dom";
 
 const Login = () => {
   return (
@@ -58,9 +59,9 @@ const Login = () => {
           </a>
           <p>
             ¿No tienes cuenta?{" "}
-            <a href="/register" className="text-blue-600 hover:underline">
+            <Link to="/auth/register" className="text-blue-600 hover:underline">
               Regístrate
-            </a>
+            </Link>
           </p>
         </CardFooter>
       </Card>
