@@ -1,5 +1,5 @@
 import { Avatar, AvatarImage } from "@/components/ui/avatar"
-import imageBlack from '../../public/image-black.jpg'
+import imageBlack from './../assets/images/image-black.jpg'
 import {
   NavigationMenu,
   NavigationMenuList,
@@ -8,6 +8,7 @@ import {
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu"
 import { Button } from "./ui/button"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
@@ -67,7 +68,7 @@ const Navbar = () => {
           </ul>
           <div className="flex space-x-3 ml-6">
             <Button variant={"destructive"} className=" hover:bg-blue-900 text-white px-4 py-2 rounded transition-colors">
-              Sign Up
+              <Link to='auth/login' >Sign Up</Link> 
             </Button>
             <Button className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded transition-colors">
               Sign In

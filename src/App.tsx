@@ -1,13 +1,19 @@
-import { Route, Routes, useLocation } from "react-router-dom"
-import Home from "./public/home.page"
+import { Route, Routes} from "react-router-dom"
+import Navbar from "./components/navbar"
+
+
 import PublicLayaout from "./layouts/public.layout"
 import PrivateLayout from "./layouts/private.layout"
-import Navbar from "./components/navbar"
-import NotFound from "./public/not-found"
+
+
+import Home from "./pages/public/home.page"
+import NotFound from "./pages/public/not-found"
+import Login from "./pages/auth/login-page"
+
+
 const App = () => {
 
 
-  const location = useLocation()
   
  
 
@@ -15,14 +21,14 @@ const App = () => {
 
   return (
     <Routes>
-      <Route path="" element={<div>
-          {location.state}
-      </div>} />
-      <Route path="about" element={
-        <h2>Aboout {location.pathname}</h2>
-      } />
+      <Route path="auth" >
 
-      <Route element={<PublicLayaout/>}>
+        <Route path = 'login' element={<Login/>} />
+
+      </Route>
+   
+
+      <Route  element={<PublicLayaout/>}>
         <Route index element={<Home/>} />
       
       </Route>
