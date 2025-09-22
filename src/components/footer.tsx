@@ -7,7 +7,7 @@ import {
 
 export function Footer() {
   return (
-    <footer className="bg-gradient-to-tr from-gray-900 via-rose-900 to-red-900 text-gray-100 py-14 px-4 md:px-10 relative overflow-hidden">
+    <footer className="bg-gradient-to-tr from-gray-900 via-rose-900 to-red-900 text-gray-100 py-14 px-4 md:px-10 relative overflow-hidden ">
       {/* Círculos decorativos suaves */}
       <div className="pointer-events-none absolute -top-24 -left-24 w-80 h-80 bg-red-800 rounded-full blur-3xl opacity-20"></div>
       <div className="pointer-events-none absolute -bottom-32 -right-20 w-[28rem] h-[28rem] bg-rose-900 rounded-full blur-3xl opacity-15"></div>

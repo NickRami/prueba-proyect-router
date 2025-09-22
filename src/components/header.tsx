@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 const HeaderContent = () => {
   return (
-    <header className="bg-gradient-to-br from-pink-50 via-white to-rose-50 my-5">
+    <header className="h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 py-5">
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 min-h-[70vh]">
         {/* Texto + CTA */}
         <div className="flex flex-col items-center md:items-start justify-center px-8 py-16 text-center md:text-left space-y-8">

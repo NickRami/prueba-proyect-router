@@ -8,11 +8,10 @@ import {
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu"
 import { Button } from "./ui/button"
-import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <header className="mb-3">
+    <header className="">
       <nav className="bg-gray-900 py-1 text-gray-100">
         <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
           <Avatar className="cursor-pointer h-14 w-14">
@@ -67,11 +66,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="flex space-x-3 ml-6">
-            <Button variant={"destructive"} className=" hover:bg-blue-900 text-white px-4 py-2 rounded transition-colors">
-              <Link to='auth/login' >Sign Up</Link> 
-            </Button>
-            <Button className="bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded transition-colors">
-              Sign In
+           
+            <Button variant='destructive' className=" hover:bg-gray-700 text-white px-4 py-2 rounded transition-colors">
+             Iniciar Sesión
             </Button>
           </div>
         </div>
