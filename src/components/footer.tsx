@@ -16,7 +16,7 @@ export function Footer() {
         {/* Logo y descripción */}
         <div className="space-y-5">
           <h2 className="text-2xl font-extrabold tracking-tight text-red-400 drop-shadow-sm">
-            Salón Belleza
+            Black Peluquería & Barbería
           </h2>
           <p className="text-red-200 max-w-xs leading-relaxed font-medium">
             Donde la belleza y el estilo se unen para transformar tu look y elevar tu confianza.
@@ -73,7 +73,7 @@ export function Footer() {
         {/* Newsletter / Horarios */}
         <div>
           <h3 className="text-lg font-semibold mb-4 border-b border-red-800 pb-2 tracking-wide">
-            Horario & Newsletter
+            Horarios
           </h3>
           <p className="text-red-200 mb-6 text-base font-medium leading-relaxed">
             Lunes a Viernes: 9:00 AM – 7:00 PM <br />
@@ -101,7 +101,7 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="mt-12 border-t border-red-800 pt-6 text-center text-red-300 text-sm relative z-10 max-w-7xl mx-auto px-4 md:px-8 select-none">
-        © {new Date().getFullYear()} Salón Belleza. Todos los derechos reservados.
+        © {new Date().getFullYear()} Black Peluqueria & Barberia. Todos los derechos reservados.
       </div>
     </footer>
   );
