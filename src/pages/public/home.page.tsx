@@ -3,11 +3,11 @@ import HeaderContent from "@/components/header"
 
 const Home = () => {
   return (
-    <div className=" min-h-screen flex flex-col">
-        <main className=""> 
+    
+        <main className="bg-gradient-to-br from-blue-50 to-gray-100" > 
             <HeaderContent/>
          </main>
-    </div>
+    
   )
 }
 

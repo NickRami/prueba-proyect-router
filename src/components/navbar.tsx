@@ -8,12 +8,13 @@ import {
   NavigationMenuContent,
 } from "@/components/ui/navigation-menu"
 import { Button } from "./ui/button"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
   return (
-    <header className="">
-      <nav className="bg-gray-900 py-1 text-gray-100">
-        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16">
+    
+      <nav className="bg-gray-900 py-1 text-gray-100  ">
+        <div className="max-w-6xl mx-auto px-4 flex items-center justify-between h-16  ">
           <Avatar className="cursor-pointer h-14 w-14">
             <AvatarImage src={imageBlack} className="h-14 w-14 object-cover" />
           </Avatar>
@@ -68,12 +69,12 @@ const Navbar = () => {
           <div className="flex space-x-3 ml-6">
            
             <Button variant='destructive' className=" hover:bg-gray-700 text-white px-4 py-2 rounded transition-colors">
-             Iniciar Sesión
+            <Link to="auth/login">Iniciar Sesión</Link>
             </Button>
           </div>
         </div>
       </nav>
-    </header>
+  
   )
 }
 

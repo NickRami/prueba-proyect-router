@@ -1,9 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { Scissors } from "lucide-react";
 
 const HeaderContent = () => {
   return (
-    <header className="h-screen bg-gradient-to-br from-pink-50 via-white to-rose-50 py-5">
-  <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 h-full">
+    <header className="h-screen sm:px-10 lg:py-6   lg:px-6 flex items-center">
+  <div className="max-w-7xl mx-auto grid grid-cols-1 place-items-center md:grid-cols-2 h-full  gap-8 ">
     
     {/* Texto + CTA */}
     <div className="flex flex-col items-center md:items-start justify-center px-8 py-16 text-center md:text-left space-y-6">
@@ -22,21 +23,24 @@ const HeaderContent = () => {
       </p>
 
       <Button className="bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 hover:from-pink-700 hover:via-rose-700 hover:to-red-700 text-white px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 font-semibold text-lg">
+        <Scissors className="w-5 h-5" />
         Agenda tu cita
       </Button>
 
     </div>
 
     {/* Imagen */}
-    <div className="hidden md:block relative overflow-hidden rounded-l-3xl shadow-2xl h-full">
-      <img
-        src="https://images.pexels.com/photos/1319462/pexels-photo-1319462.jpeg"
-        alt="Salón de belleza"
-        className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
-        loading="lazy"
-      />
-      <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-    </div>
+   <div className="relative w-full   sm:mb-10 aspect-[4/3] md:aspect-auto md:w-full md:h-full max-h-[700px] overflow-hidden rounded-t-3xl md:rounded-l-3xl md:rounded-tr-none shadow-2xl">
+  <img
+    src="https://images.pexels.com/photos/11169551/pexels-photo-11169551.jpeg"
+    alt="Salón de belleza"
+    className="w-full h-full object-cover object-center transition-transform duration-500 hover:scale-105"
+    loading="lazy"
+    decoding="async"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+</div>
+
 
   </div>
 </header>

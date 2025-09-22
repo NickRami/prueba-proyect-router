@@ -101,7 +101,7 @@ export function Footer() {
 
       {/* Copyright */}
       <div className="mt-12 border-t border-red-800 pt-6 text-center text-red-300 text-sm relative z-10 max-w-7xl mx-auto px-4 md:px-8 select-none">
-        © {new Date().getFullYear()} Black Peluqueria & Barberia. Todos los derechos reservados.
+        © {new Date().getFullYear()} Black Peluqueria & Barberia . Todos los derechos reservados.
       </div>
     </footer>
   );
