@@ -10,6 +10,7 @@ import Home from "./pages/public/home.page"
 import NotFound from "./pages/public/not-found"
 import Login from "./pages/auth/login-page"
 import Register from "./pages/auth/register-page"
+import  Contacto from "./pages/public/contacto-page"
 
 
 const App = () => {
@@ -31,7 +32,7 @@ const App = () => {
 
       <Route  element={<PublicLayaout/>}>
         <Route index element={<Home/>} />
-      
+        <Route path = 'contacto' element={<Contacto/>} />
       </Route>
 
       <Route element={<PrivateLayout/>}>

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Scissors } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const HeaderContent = () => {
   return (
@@ -24,7 +25,7 @@ const HeaderContent = () => {
 
       <Button className="bg-gradient-to-r from-pink-600 via-rose-600 to-red-600 hover:from-pink-700 hover:via-rose-700 hover:to-red-700 text-white px-8 py-4 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300 font-semibold text-lg">
         <Scissors className="w-5 h-5" />
-        Agenda tu cita
+         <Link to="/contacto" className="ml-2"> Reserva tu turno</Link> 
       </Button>
 
     </div>

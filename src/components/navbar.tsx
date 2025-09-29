@@ -20,9 +20,9 @@ const Navbar = () => {
           </Avatar>
           <ul className="flex space-x-6 items-center">
             <li>
-              <a className="hover:text-blue-400 font-medium transition-colors" href="#">
-                Inicio
-              </a>
+              <Link to='/' className="hover:text-blue-400 font-medium transition-colors">
+               Inicio
+              </Link>
             </li>
             <li>
               <NavigationMenu>
@@ -61,9 +61,9 @@ const Navbar = () => {
               </a>
             </li>
             <li>
-              <a className="hover:text-blue-400 font-medium transition-colors" href="#">
+             <Link to='contacto' className="hover:text-blue-400 font-medium transition-colors" >
                 Contacto
-              </a>
+             </Link>
             </li>
           </ul>
           <div className="flex space-x-3 ml-6">
